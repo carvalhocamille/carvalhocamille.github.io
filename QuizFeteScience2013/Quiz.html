@@ -1,0 +1,92 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Quiz fête de la Science</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <style>
+  ul { list-style-type: none; margin: 0; padding: 0; width: 90%; }
+  ul li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; width:100%}
+  ul li span { position: absolute; margin-left: -1.3em; }
+  </style>
+  <script>
+   (function($){
+
+    $.fn.shuffle = function() {
+        return this.each(function(){
+            var items = $(this).children().clone(true);
+            return (items.length) ? $(this).html($.shuffle(items)) : this;
+        });
+    }
+    
+    $.shuffle = function(arr) {
+        for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
+        return arr;
+    }
+    
+    })($);  
+    
+    
+    $(function() {
+    foo = $( "#sortable" ).sortable();
+    //$( "#sortable" ).disableSelection();
+    $('#sortable').shuffle()
+    
+    });
+    
+    check= function(){
+        var elems = $('.shuff');
+
+         for (var i=0 ;i< elems.length; i++){
+             console.log(i)
+            elem = $(elems[i]);
+            if(elem.attr('id') == ('item'+(i+1))){
+                elem.css('border-color','green');
+            } else {
+                elem.css('border-color','red');
+            } 
+
+         }
+
+     }
+
+
+  </script>
+</head>
+<body>
+
+<h1> Test Quiz fête de la science : </h1>
+<h2> Ordonne les chiens de droite dans le bon ordre. Tu peux vérifier à tout moment si tu as juste en cliquant sur le bouton "Vérifier" </h2>
+<table style='width:100%'>
+    <tr style='width:100%'>
+        <td style='width:40%'>
+            <ul id="">
+              <li class=" ui-state-default" id='item1' style="height:210px;width:100%;"><img src="img/1ec5cf16a7942343bd303ac6dc17d637_large.jpeg"   height="200px" ></li>
+              <li class=" ui-state-default" id='item2' style="height:210px;width:100%;"><img src="img/44df3e5b.jpg"  height="200px" ></li>
+              <li class=" ui-state-default" id='item3' style="height:210px;width:100%;"><img src="img/chi.jpg"  height="200px" ></li>
+              <li class=" ui-state-default" id='item4' style="height:210px;width:100%;"><img src="img/Chien-m%25c3%25a9chant.jpg"  height="200px" ></li>
+            </ul>
+        </td>
+        <td style='width:10%'>
+            <button onclick="check()" > Vérifier </button>
+            <button onclick="$('#sortable').shuffle();$('.shuff').css('border-color','lightgrey')"> Mélanger </button>
+        </td>
+        <td style='width:40%'>
+            <ul id="sortable">
+              <li class="shuff ui-state-default" id='item1' style="height:210px;border-width:3px;width:100%;"><img src="img/1ec5cf16a7942343bd303ac6dc17d637_large.jpeg"   height="200px" ></li>
+              <li class="shuff ui-state-default" id='item2' style="height:210px;border-width:3px;width:100%;"><img src="img/44df3e5b.jpg"  height="200px" ></li>
+              <li class="shuff ui-state-default" id='item3' style="height:210px;border-width:3px;width:100%;"><img src="img/chi.jpg"  height="200px" ></li>
+              <li class="shuff ui-state-default" id='item4' style="height:210px;border-width:3px;width:100%;"><img src="img/Chien-m%25c3%25a9chant.jpg"  height="200px" ></li>
+            </ul>
+        </td>
+    </tr>
+<table>
+
+
+ 
+ 
+</body>
+</html>

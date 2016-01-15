@@ -1,0 +1,99 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Quiz fête de la Science</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <style>
+  ul { list-style-type: none; margin: 0; padding: 0; width: 90%; }
+  ul li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; width:100%}
+  ul li span { position: absolute; margin-left: -1.3em; }
+  </style>
+  <script>
+   (function($){
+
+    $.fn.shuffle = function() {
+        return this.each(function(){
+            var items = $(this).children().clone(true);
+            return (items.length) ? $(this).html($.shuffle(items)) : this;
+        });
+    }
+    
+    $.shuffle = function(arr) {
+        for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
+        return arr;
+    }
+    
+    })($);  
+    
+    
+    $(function() {
+    foo = $( "#sortable" ).sortable();
+    //$( "#sortable" ).disableSelection();
+    $('#sortable').shuffle()
+    
+    });
+    
+    check= function(){
+        var elems = $('.shuff');
+
+         for (var i=0 ;i< elems.length; i++){
+             console.log(i)
+            elem = $(elems[i]);
+            if(elem.attr('id') == ('item'+(i+1))){
+                elem.css('border-color','green');
+            } else {
+                elem.css('border-color','red');
+            } 
+
+         }
+
+     }
+
+
+  </script>
+</head>
+<body>
+	<center>
+<h1> Quiz fête de la science </h1>
+	</center>
+	<center>
+<h2 style='width:70%'>
+	<font face="Verdana" color="#0677AF">
+	Quand tu jettes un caillou dans l’eau, il se forme un rond qui devient de plus en plus grand. Quand cette onde arrive au bord du bassin, elle se réfléchit et donne naissance à un autre rond qui va à son tour se propager. Et si tu verses un peu d’huile dans l’eau, tu verras que l’onde va se déformer à la traversée de la tâche d’huile et que des nouvelles ondes seront produites. 
+	</font>
+</h2>
+</center>
+<center>
+<h2 style='width:70%'>
+	<font face="Verdana" color="#0677AF">
+La forme de l’onde dépend donc des obstacles qu’elle rencontre ainsi que  de la nature des milieux qu’elle traverse. Sauras-tu associer une onde à son milieu ?
+A toi de jouer !  
+</font>
+</h2>
+</center>
+<center>
+<h2> Pour commencer le Quiz, choisis un niveau </h2>
+</center>
+ <center>
+<table style='width:100%'>
+        <td align="center">
+			<input type="button" name="Niveau 1" value="Niveau 1" onclick="self.location.href='Quiz2.html'"onclick> 
+			<input type="button" name="Niveau 2" value="Niveau 2" onclick="self.location.href='Quiz4.html'"onclick> 
+			<input type="button" name="Niveau 3" value="Niveau 3" onclick="self.location.href='Quiz3.html'"onclick> 
+			<input type="button" name="Niveau 4" value="Niveau 4" onclick="self.location.href='Quiz1.html'"onclick>     
+        </td>
+<table>
+	</center>
+	<center>
+<img src="img/dessin-quizz.jpg"  height="300px" >
+</center>
+
+
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!--
+ ____________________________________________________________
+|                                                            |
+|    DESIGN + Pat Heard { http://fullahead.org }             |
+|      DATE + 2006.09.12                                     |
+| COPYRIGHT + Free use if this notice is kept in place.      |
+|____________________________________________________________|
+
+-->
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+
+  <title> Carvalho Camille </title>
+
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="author" content="fullahead.org" />
+  <meta name="keywords" content="XHTML, CSS, template, FullAhead" />
+  <meta name="description" content="A valid, XHTML 1.0 template" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="googlebot" content="noarchive" />
+
+  <link rel="stylesheet" type="text/css" href="css/html.css" media="screen, projection, tv " />
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen, projection, tv" />
+  <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+
+  <!-- Conditional comment to apply opacity fix for IE #content background.
+       Invalid CSS, but can be removed without harming design -->
+  <!--[if gt IE 5]>
+  <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen, projection, tv " />
+  <![endif]-->
+
+</head>
+
+
+<body>
+
+<!-- #wrapper: centers the content and sets the width -->
+<div id="wrapper">
+
+  <!-- #content: applies the white, dropshadow background -->
+  <div id="content">
+
+    <!-- #header: holds site title and subtitle -->
+    <div id="header">
+      <h1><span class="big darkBrown">C</span>arvalho <span class="big darkBrown">C</span>amille</h1>
+    </div>
+
+
+
+    <!-- #menu: topbar menu of the site.  Use the helper classes .two, .three, .four and .five to set
+                the widths for 2, 3, 4 and 5 item menus. -->
+	    <ul id="menu" class="five">
+	      <li><a href="index.html" title="Accueil"><span class="big">A</span>ccueil</a></li>
+	      <li><a href="recherche.html" title="Recherche"><span class="big">R</span>echerche</a></li>
+	      <li><a href="enseignement.html" title="Monitorat"><span class="big">M</span>onitorat</a></li>
+	      <li><a href="cursus.html" title="Cursus"><span class="big">C</span>ursus</a></li>
+		  <li><a href="Research.html" title="EnglishVersion"><span class="big">E</span>nglish</a></li>
+	    </ul>
+
+
+    <!-- #page: holds all page content, as well as footer -->
+    <div id="page">
+
+      <h1>Activités de recherche</h1>
+
+
+      <p>
+    Je travaille sur la propagation des ondes électromagnétiques dans des structures plasmoniques, c'est-à-dire dans des milieux composés d'un diélectrique et d'un métal. 
+	Aux fréquences optiques les métaux présentent des propriétés électromagnétiques inhabituelles, comme une permittivité négative. Ce changement de signe de permittivité (positive pour les diélectrique et négative pour les métaux) permet l'existence d'ondes de surface appelées plasmons de surface dont le confinement et le guidage dans les composants nanophotoniques permettraient de dépasser la limite de diffraction. Mathématiquement ce changement de signe inhibe l'utilisation d'outils classiques d'analyse fonctionnelle pour étudier les problèmes d'électromagnétisme plasmoniques, et les méthodes de type éléments finis échouent pour approcher le champ électromagnétique. Mon travail consiste modéliser ces ondes, proposer un modèle mathématique adéquat à l'aide de la T-coercivité, et fournir une méthode numérique adaptée pour approcher ces ondes lorsque l'interface présente des coins, ceci pour des problèmes de diffraction et pour la recherche de modes guidés dans des guides plasmoniques. Une des difficultés de ces problèmes est aussi l'apparition de singularités hyper ocsillantes aux coins, appelées ondes de trou noir, dont l'étude et l'approximation nécessitent des traitements particuliers.
+	   </p>
+	
+	 <h2>Thèmes de recherche</h2>
+	<br/>
+	Équations aux dérivées partielles, propagation des ondes, électromagnétisme, problèmes de diffraction
+		<br/>
+	Métamatériaux, modélisation des plasmons
+		<br/>
+	Aanlyse numérique, simulation et calcul scientifique, Méthode des Éléments Finis
+		<br/>
+	Théorie spectrale, guides d’ondes, PMLs
+		<br/>
+	Théorie de Kondratiev, singularités	
+	
+   
+<!--
+<object id="VIDEO" type="video/x-ms-wmv" data="avecPML.wmv" width="360" height="270">
+        <param name="src" value="avecPML.wmv" />
+        <param name="autostart" value="1" /> 
+        <param name="width" value="360" />
+        <param name="height" value="270" />
+        <param name="repeat" value="-1" />
+        <param name="showcontrols" value="true" />
+                <embed src="avecPML.wmv" width="360" height="270"></embed> 
+            </object>  -->
+		 <h2> </h2>
+            <center>
+                <video width="320" height="240" controls loop autoplay muted>
+                   <!--
+					    <source src="video/Reuextf.appleuniversal.mp4" type="video/mp4">
+                    <source src="video/Reuextf.appleuniversal.oggtheora.ogv" type="video/ogg"> -->
+				    <source src="video/PASPML1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                <video width="320" height="240" controls loop autoplay muted>
+                   <!--
+					    <source src="video/Reuextf.appleuniversal.mp4" type="video/mp4">
+                    <source src="video/Reuextf.appleuniversal.oggtheora.ogv" type="video/ogg"> -->
+				    <source src="video/PML.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+				Problème de diffraction par une onde plane d'une inclusion métallique. Gauche : méthode éléments fins standard, le champ est mal approché car des réflexions parasites apparaissent aux coins. Droite : méthode avec PMLs (traitement spécifique aux coins), cette méthode approche correctement et de façon stable le champ.
+            </center>
+			
+			<h3>Thèse</h3>
+			<li >
+				Étude mathématique et numérique de structures plasmoniques avec coins.
+				
+<span >&nbsp;&nbsp;</span> [ <a href="These_carvalho.pdf" title='charger These_carvalho.pdf' style='text-decoration: none; z-index:100; bottom: -0.4ex;' class='iconButton loadButton'> PDF </a> ] &nbsp;&nbsp;	<span >&nbsp;&nbsp;</span> [ <a href="these_carvalho_soutenance.pdf" title='charger these_carvalho_soutenance.pdf' style='text-decoration: none; z-index:100; bottom: -0.4ex;' class='iconButton loadButton'> Présentation </a> ] &nbsp;&nbsp;</li>
+
+			<h3>Publications </h3>
+			<ul class='publisItems'>
+			<li >
+				Mesh requirements for the finite element approximation of problems with sign-changing coefficients,
+			<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~carvalho' >Camille <span class='publiMemberName'>Carvalho</span></a></span>, &nbsp;<span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a> en cours de finalisation. </span>
+			</li>	
+			<li >
+				On the use of Perfectly Matched Layers at corners for scattering problems with sign-changing coefficients,
+			<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~carvalho' >Camille <span class='publiMemberName'>Carvalho</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~chesnel' >Lucas <span class='publiMemberName'>Chesnel</span></a></span>, &nbsp;<span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a> soumis. </span> <span >&nbsp;&nbsp;</span> [ <a href='http://arxiv.org/pdf/1511.01932.pdf' title='charger http://arxiv.org/pdf/1511.01932.pdf' style='text-decoration: none; z-index:100; bottom: -0.4ex;' class='iconButton loadButton'> PDF </a> ] &nbsp;&nbsp;</li>		
+			</li>	
+			<li >
+				Plasmonic cavity modes: black-hole phenomena captured by Perfectly Matched Layers,
+			<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~carvalho' >Camille <span class='publiMemberName'>Carvalho</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~chesnel' >Lucas <span class='publiMemberName'>Chesnel,</span></a></span> &nbsp;<span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a> PIERS Proceedings, 2013</span>
+			<span >&nbsp;&nbsp;</span> [ <a href='http://uma.ensta-paristech.fr/files/publis/2013/2013-proc-uma1367-PIERSFullPaperCarvalho.pdf' title='charger http://uma.ensta-paristech.fr/files/publis/2013/2013-proc-uma1367-PIERSFullPaperCarvalho.pdf' style='text-decoration: none; z-index:100; bottom: -0.4ex;' class='iconButton loadButton'> PDF </a> ] &nbsp;&nbsp;</li>			
+		
+	
+			</ul>
+			
+		
+			<h3 >Conferences</h3>
+			<ul class='publisItems'>
+				<li >Plasmonic waveguide : T-coercivity approach for Maxwell's equations,<br/>
+				<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>,&nbsp; <span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a></span>, WAVES, Karlsrhuhe, 2015</span></li>
+			<li >Leaky modes in a plasmonic waveguide,<br/>
+			<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~carvalho' >Camille <span class='publiMemberName'>Carvalho</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~chesnel' >Lucas <span class='publiMemberName'>Chesnel</span></a></span>, &nbsp; <span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a></span> Leaky Days, 2015</span></li>
+
+				<li >Leaky modes in a non dissipative plasmonic waveguide with a bounded cross section,<br/>
+				<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~carvalho' >Camille <span class='publiMemberName'>Carvalho</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~chesnel' >Lucas <span class='publiMemberName'>Chesnel</span></a></span>, &nbsp; <span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a></span> OWTNM, Nice, 2014</span></li>
+				<li >Revealing guided modes in a plasmonic waveguide using Perfectly Matched Layers at the corners,<br/>
+				<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~carvalho' >Camille <span class='publiMemberName'>Carvalho</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~chesnel' >Lucas <span class='publiMemberName'>Chesnel</span></a></span>,&nbsp; <span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a></span>, KOZWAVES, Newcastle (Australie), 2014</span></li>
+
+				<li >Plasmonic cavity modes: black-hole phenomena captured by PerfectLy Matched Layers,<br/>
+				<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~carvalho' >Camille <span class='publiMemberName'>Carvalho</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~chesnel' >Lucas <span class='publiMemberName'>Chesnel</span></a></span>, &nbsp; <span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a></span>, PIERS, Stockholm, 2013</span>
+				<span >&nbsp;&nbsp;</span> [ <a href='http://uma.ensta-paristech.fr/files/publis/2013/2013-conf-uma1404-PIERSkeynote_carvalho.pdf' title='charger http://uma.ensta-paristech.fr/files/publis/2013/2013-conf-uma1404-PIERSkeynote_carvalho.pdf' style='text-decoration: none; z-index:100; bottom: -0.4ex;' class='iconButton loadButton'> PDF </a> ] &nbsp;&nbsp;</li>
+			<li >Plasmonic cavity modes with sign changing permittivity,<br/>
+			<span class='author'><a href='http://uma.ensta-paristech.fr/~bonnet' >Anne-Sophie <span class='publiMemberName'>Bonnet-BenDhia</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~carvalho' >Camille <span class='publiMemberName'>Carvalho</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~chesnel' >Lucas <span class='publiMemberName'>Chesnel</span></a></span>, <span class='author'><a href='http://uma.ensta-paristech.fr/~ciarlet' >Patrick <span class='publiMemberName'>Ciarlet Jr.</span></a></span>, &nbsp;<span class='author'><a href='http://uma.ensta-paristech.fr/~claeys' >Xavier <span class='publiMemberName'>Claeys,</span></a> WAVES, Tunis,2013</span>
+			<span >&nbsp;&nbsp;</span> [ <a href='http://uma.ensta-paristech.fr/files/publis/2013/2013-conf-uma1365-Waves2013CarvalhoV1.pdf' title='charger http://uma.ensta-paristech.fr/files/publis/2013/2013-conf-uma1365-Waves2013CarvalhoV1.pdf' style='text-decoration: none; z-index:100; bottom: -0.4ex;' class='iconButton loadButton'> PDF </a> ] &nbsp;&nbsp;</li>
+			</ul>
+
+			<h2> Liens </h2>
+     <ul>
+    <li><a href="http://uma.ensta.fr/poems/"title="POEMS"> Site de l'équipe POems</a> </li> 
+    <li><a href="http://uma.ensta.fr/"title="Uma"> Site de l'UMA, ENSTA ParisTech </a> </li>
+    <li><a href="http://www.graduateschool.polytechnique.edu/accueil-graduate-school/doctorat/"title="EDX"> Site de l'EDX</a> </li>
+	<li><a href="BD.html"title="BD"> Mon sujet de thèse en BD : Que sont les plasmons de surface ? </a> </li>
+    </ul>
+
+
+
+      <!-- .footer: the site footer text, links and whatever else -->
+      <p class="footer">
+        Design by <a href="http://fullahead.org" title="Visit FullAhead">FullAhead</a>.  Valid CSS &amp; XHTML with no rights reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>

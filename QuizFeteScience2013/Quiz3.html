@@ -1,0 +1,109 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Quiz fête de la Science</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <style>
+  ul { list-style-type: none; margin: 0; padding: 0; width: 240px; }
+  ul li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em;width:240px;}
+
+  ul li span { position: absolute; margin-left: -1.3em; }
+  </style>
+  <script>
+   (function($){
+
+    $.fn.shuffle = function() {
+        return this.each(function(){
+            var items = $(this).children().clone(true);
+            return (items.length) ? $(this).html($.shuffle(items)) : this;
+        });
+    }
+    
+    $.shuffle = function(arr) {
+        for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
+        return arr;
+    }
+    
+    })($);  
+    
+    
+    $(function() {
+    foo = $( "#sortable" ).sortable();
+    //$( "#sortable" ).disableSelection();
+    $('#sortable').shuffle();
+    $('.next-level').hide();
+    });
+    
+    check= function(){
+        var elems = $('.shuff');
+		var ok = 0;
+         for (var i=0 ;i< elems.length; i++){
+             console.log(i)
+            elem = $(elems[i]);
+
+            if(elem.attr('id') == ('item'+(i+1))){
+                elem.css('border-color','green');
+				ok = ok+1;
+            } else {
+                elem.css('border-color','red');
+            } 
+
+         }
+		 if (ok === elems.length){
+			 $('.next-level').show();
+		 }
+
+     }
+  </script>
+
+</head>
+<body>
+
+	<center>
+	<h1> Fête de la science : Quiz 3</h1>
+	</center>
+	<center>
+	<h2> 
+		<font face="Verdana" color="#0677AF">A chaque solution (vidéo de gauche) associe le milieu correspondant (image de droite). Tu peux vérifier à tout moment si tu as juste en cliquant sur le bouton "Vérifier"  
+		</font>
+	</h2>
+	</center>
+	<table style='width:80%;margin:auto'>
+	    <tr style=''>
+	        <td style='width:30%'>
+	            <ul id="">
+				    <li class=" ui-state-default" id='item1' style="height:240px;"><video width="240" height="240" controls>
+						<source src="video/OndesPlanR2Theta0p25Dt0p04.webmvp8.webm" type="video/webm"></video></li>
+				   <li class=" ui-state-default" id='item2' style="height:240px;"><video width="240" height="240" controls >
+						<source src="video/OndesPlanSpecR4Theta0p25Dt0p04.webmvp8.webm" type="video/webm"></video></li>
+				    <li class=" ui-state-default" id='item3' style="height:240px;"><video width="240" height="240" controls >
+						<source src="video/hmg.webm" type="video/webm"></video></li>
+   
+	            </ul>
+	        </td>
+	        <td style='width:25%'>
+	            <button onclick="check()" > Vérifier </button>
+	            <button onclick="$('#sortable').shuffle();$('.shuff').css('border-color','lightgrey'); $('.next-level').hide();"> Mélanger </button>
+				<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick> 
+				</br>
+	            <button class='next-level' style='display:none' onclick="self.location.href='Quiz1.html'"> Niveau Suivant </button>
+	        </td>
+	        <td style='width:30%'>
+	            <ul id="sortable">
+				  <li class="shuff ui-state-default" id='item1' style="height:240px;border-width:3px;"><img src="img/milieu_plan.png"  height="200px" width="200px"></li>
+	              <li class="shuff ui-state-default" id='item2' style="height:240px;border-width:3px;"><img src="img/milieu_plan_spec.png"   height="200px" width="200px"></li>
+	              <li class="shuff ui-state-default" id='item3' style="height:240px;border-width:3px;"><img src="img/medium_homogene2.jpg"  height="200px" width="200px" ></li>
+	            </ul>
+	        </td>
+	    </tr>
+	<table>
+
+
+ 
+ 
+</body>
+</html>

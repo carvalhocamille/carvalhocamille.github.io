@@ -1,0 +1,84 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Quiz fête de la Science</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <style>
+  ul { list-style-type: none; margin: 0; padding: 0; width: 90%; }
+  ul li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; width:100%}
+  ul li span { position: absolute; margin-left: -1.3em; }
+  </style>
+  <script>
+   (function($){
+
+    $.fn.shuffle = function() {
+        return this.each(function(){
+            var items = $(this).children().clone(true);
+            return (items.length) ? $(this).html($.shuffle(items)) : this;
+        });
+    }
+    
+    $.shuffle = function(arr) {
+        for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
+        return arr;
+    }
+    
+    })($);  
+    
+    
+    $(function() {
+    foo = $( "#sortable" ).sortable();
+    //$( "#sortable" ).disableSelection();
+    $('#sortable').shuffle()
+    
+    });
+    
+    check= function(){
+        var elems = $('.shuff');
+
+         for (var i=0 ;i< elems.length; i++){
+             console.log(i)
+            elem = $(elems[i]);
+            if(elem.attr('id') == ('item'+(i+1))){
+                elem.css('border-color','green');
+            } else {
+                elem.css('border-color','red');
+            } 
+
+         }
+
+     }
+
+
+  </script>
+</head>
+<body>
+	<h1> Quiz n°2 : propagation en temps d'une source ponctuelle dans des mileux plus complexes'</h1>
+	<h2> Petite introduction</h2>
+
+	<p> bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla bla </br>
+	bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla bla </br>
+	bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla bla </br>
+	bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla bla </br>
+	bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla bla </br>
+	bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla bla </br>
+
+	</p>
+	<table style='width:100%'>
+   
+	        <td style='width:70%'>
+				<input type="button" name="Commencer le Niveau 2" value="Commencer le Niveau 2" onclick="self.location.href='Quiz2.html'"onclick> 
+				<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick>      
+	        </td>
+
+	<table>
+
+
+ 
+ 
+</body>
+</html>
