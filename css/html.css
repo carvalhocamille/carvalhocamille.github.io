@@ -75,10 +75,13 @@ ol {
     margin: 10px 30px;
     padding: 0 30px 0 5px;
     list-style: 1;
-	
 
 }
 
+ol li {
+  padding-left: 25px;
+
+}
 ul {
   margin: 10px 30px;
   padding: 0 30px 0 5px;
