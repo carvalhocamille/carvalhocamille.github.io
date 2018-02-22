@@ -71,15 +71,58 @@
    	Partial Differential Equations, Waves propagation, Electromagnetism, Scattering, Metamaterials and Plasmonics Modeling, Numerical Analysis, Simulation and scientific computing, Finite Elements Method, Spectral theory, waveguides, PMLs, Kondratiev theory, singularities, Boundary integral methods, Asymptotics
 	
 	<br>
-        <h1>Research projects</h1>
-
+        <h1>Current research projects</h1>
 
         <p>
-			I study electromagnetic waves in plasmonic structures, made of dielectrics and metals. At optical frequencies metals exhibit unusual electromagnetic properties like a negative permittivity. Due to this sign-changing permittivity (positive for dielectrics and negative for metals), there exist surface electromagnetic waves called surface plasmons. Guiding and confining such particular waves in nanophotonic devices reveal a great interest to overcome the diffraction limit. Mathematically, such change of sign makes the classical tools of functional analysis unusuable to study plasmonic problems, and finite elements method fail to approximate the electromagnetic field. My work consists in providing a model for these plasmonic waves, an adapted mathematical model using the T-coercivity approach, and develop a numerical method to approximate these plasmons when the interface between the two media presents corners. This method is applied to study scattering problems in plasmonics, and the search of guided modes in plasmonic waveguides. One of the difficulties of these problems is the appearance of hyper oscillating singularities at the corners, called black-hole waves, whose characterization and approximation require specific treatment.
-			<br/>
-				More generally I'm interested in computing accurately near fields in plasmonic structures, using weak formulation with finite elements method, or boundary integral representation coupling numerical analysis and asymptotics.
+			I study electromagnetic waves in plasmonic structures, made of dielectrics and metals. At optical frequencies metals exhibit unusual electromagnetic properties like a negative permittivity. Due to this sign-changing permittivity (positive for dielectrics and negative for metals), there exist surface electromagnetic waves called surface plasmons. Guiding and confining such particular waves in nanophotonic devices reveal a great interest to overcome the diffraction limit, in nanophotonic sensing and related applications.
+			<br>
+			Mathematically, such change of sign makes the classical theoretical and numerical tools to study electromagnetic problems unusuable. My work consists in providing a model for these plasmonic waves, and develop numerical methods to accurately capture the near-field. I'm interested in computing accurately near fields in plasmonic structures, by combning several methods: finite elements method, boundary integral representation, and asymptotics.
   	   </p>
+	   
+	   <h2>Multi-scale FEM method for problems with sign-changing coefficients</h2>	
+		
+	  Electromagnetic problems in plasmonic structures (scattering problems, waveguide problems, interior transmission eigenproblems) require particular treatments to design efficient numerical methods to accurately evaluate near-fields. It has been shown that hyper-oscillating singularities, called back-holes waves, appear at the corners in those problems, and need to be well-approximated to accurately predict the near-field. I have been developing finite-element-based methods to capture those singularities: this may include specific mesh requirements, the use of Perfecly Matched Layers, or singularity extraction to relax the numerical method. I'm currently working on provind a code to handle arbitrary geometries. 
+	  
+      <center>
+          <video width="320" height="240" controls loop autoplay muted>
+             <!--
+			    <source src="video/Reuextf.appleuniversal.mp4" type="video/mp4">
+              <source src="video/Reuextf.appleuniversal.oggtheora.ogv" type="video/ogg"> -->
+		    <source src="video/PASPML1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <video width="320" height="240" controls loop autoplay muted>
+             <!--
+			    <source src="video/Reuextf.appleuniversal.mp4" type="video/mp4">
+              <source src="video/Reuextf.appleuniversal.oggtheora.ogv" type="video/ogg"> -->
+		    <source src="video/PML.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+		Scattering problem by a plane wave of a metallic inclusion. Left: standard FEM, spurious reflxions at the corners (steady wave). Right: multi-scale method, the plasmons propagates towards the corners.
+      </center>
 	
+      <h2>Close-evaluation of layer potentials</h2>	
+		
+      <p>
+The close-evaluation problem in boundary integral methods refers to large errors incurred when evaluating layer potentials at points near the boundary of the domain despite being accurate elsewhere in the domain. When using a high order Nystr\"om method to numerically evaluate a layer potential, its high order accuracy will be effective for nearly all points in the domain. However, at close-evaluation points, this quadrature rule will produce an $O(1)$ error. The goal is to address this error using asymptotic analysis of the nearly singular behavior. 	
+	 </p>
+	 <div>
+		  <img src="img/bie.png" width="560"><br>	
+		  Close evaluation for acoustic scattering. Left: standar Nystrom method. Right: asymptotic method with deferred correction.
+	 </div>	
+			
+  	 
+   <h2>Multi-scale modeling of light scattering by nano-particles</h2>	
+		
+   <p> 
+	   The study light scattering by metal nano-particles situated closely over a substrate is a fundamental problem for understanding the extent to which controlling optical fields on the nanoscale leads to desired effects at macroscopic scales where measurements are taken. Because these metal nano-particles are situated closely to a substrate,surface plasmons interact strongly with the substrate surface. To design an efficient numerical method, we combine several techniques such as multi-scale finite element method, boundary integral equations, and asymptotic analysis. 
+ </p>	
+ <div>
+	  <img src="img/results2.png" width="560" >	 <br>
+	  	Light scattering by a triangular nano-particle. Left: over a perfect conductor. Right: without a substrate.
+ </div><br>
+
+       
 
 	
    
@@ -93,24 +136,7 @@
           <param name="showcontrols" value="true" />
                   <embed src="avecPML.wmv" width="360" height="270"></embed> 
               </object>  -->
-  		 <h2> </h2>
-              <center>
-                  <video width="320" height="240" controls loop autoplay muted>
-                     <!--
-  					    <source src="video/Reuextf.appleuniversal.mp4" type="video/mp4">
-                      <source src="video/Reuextf.appleuniversal.oggtheora.ogv" type="video/ogg"> -->
-  				    <source src="video/PASPML1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video>
-                  <video width="320" height="240" controls loop autoplay muted>
-                     <!--
-  					    <source src="video/Reuextf.appleuniversal.mp4" type="video/mp4">
-                      <source src="video/Reuextf.appleuniversal.oggtheora.ogv" type="video/ogg"> -->
-  				    <source src="video/PML.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video>
-  				Scattering problem by a plane wave of a metallic inclusion. Left: stand finite elements method, the magnetic field is not well approximated as spurious reflxions appear at the corners. Right: numerical method involving PMLs at the corners, this stable method enables to approximate the magnetci field.
-              </center>
+  		 
   
 	
 
