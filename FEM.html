@@ -67,53 +67,74 @@
     <!-- #page: holds all page content, as well as footer -->
     <div id="page">
 
-     	 <h1>Research interests</h1>
-     	<br/>
-   	Partial Differential Equations, Waves propagation, Electromagnetism, Scattering, Metamaterials and Plasmonics Modeling, Numerical Analysis, Simulation and scientific computing, Finite Elements Method, Spectral theory, waveguides, PMLs, Kondratiev theory, singularities, Boundary integral methods, Asymptotic analysis
-	
-	</div>
-	<br>
-        <h1>Current research projects</h1>
-		Click on the image to know more.
-       <figure>
-	    <a href="FEM.html"><img src="img/summary_pmls.png" width="300"></a>
-		<figcaption>Finite Element Method for problems in plasmonic structures </figcaption>
-	</figure>
-	<figure>
-	    <a href="eval.html"><img src="img/3deval.png" width="300"></a>
-	<figcaption>Close evaluation of layer potentials </figcaption>
-</figure>
-<figure>
-	    <a href="transmission.html"><img src="img/transmission.png" width="300"></a>
-		<figcaption>Boundary integral methods for optical cloaking </figcaption>
-</figure>
-
-<!--  
-      <h2>Close-evaluation of layer potentials</h2>	
+     	 <h1>Finite Element Method for problems in plasmonic structures </h1>
+		 
+		 <h4>Plasmonic structures</h4>
+        <p>
+		are made of a positive material (dielectrics) and and a negative meterial (metals at optical frequencies, metamaterials). Surface electromagnetic waves called surface plasmons can appear at the interface. </p>
+		<img src="img/plasmon.png" width="300">
 		
-      <p>
-The close-evaluation problem in boundary integral methods refers to large errors incurred when evaluating layer potentials at points near the boundary of the domain despite being accurate elsewhere in the domain. When using a high order Nyström method to numerically evaluate a layer potential, its high order accuracy will be effective for nearly all points in the domain. However, at close-evaluation points, this quadrature rule will produce an O(1) error. The goal is to address this error using asymptotic analysis of the nearly singular behavior. 	
-	 </p>
-	 <div>
-		  <img src="img/bie.png" width="560"><br>	
-		  Close evaluation for acoustic scattering. Left: standard Nyström method (O(1) close to the boundary). Right: asymptotic method with deferred correction.
-	 </div>	
+	 <h4>Applications: </h4>
+		 <p>
+	Guiding and confining such particular waves in nanophotonic devices reveal a great interest to overcome the diffraction limit, in nanophotonic sensing and related applications. </p>
+	
+ <h4>Challenges: </h4>
+ <li>Multiple scales</li>
+ <li>Surface plasmons are very sensitive to the geometry (corners)</li>
+ <li>Inaccurate predictions of the near field</li>
+ <li>Hyper-oscillating singularities, called back-holes waves, appear at the corners</li>
+ <li>Standard FEM fail due to spurious reflexions</li>
+  
+  <h4>Novel numerical method using FEM: </h4>
+  
+  <li>Mesh requirements to ensure FEM optimal convergence via the T-coercivity</li>
+  <div>
+  <img src="img/mesh0.png" width="250">
+  <img src="img/mesh1.png" width="250">
+  <p> An hexagonal cavity with an hexagonal negative material inclusion. Left: standard mesh. Right: T-conforming mesh
+  </p>
+</div>
+</br>
+  <li>Use of Perfectly Matched Layers at the corners to capture the black-hole waves</li>
+
+	        <center>
+	            <video width="320" height="240" controls loop autoplay muted>
+	               <!--
+	  			    <source src="video/Reuextf.appleuniversal.mp4" type="video/mp4">
+	                <source src="video/Reuextf.appleuniversal.oggtheora.ogv" type="video/ogg"> -->
+	  		    <source src="video/PASPML1.mp4" type="video/mp4">
+	            Your browser does not support the video tag.
+	            </video>
+	            <video width="320" height="240" controls loop autoplay muted>
+	               <!--
+	  			    <source src="video/Reuextf.appleuniversal.mp4" type="video/mp4">
+	                <source src="video/Reuextf.appleuniversal.oggtheora.ogv" type="video/ogg"> -->
+	  		    <source src="video/PML.mp4" type="video/mp4">
+	            Your browser does not support the video tag.
+	            </video>
+	  		Scattering problem by a plane wave of a metallic inclusion. Left: standard FEM, spurious reflxions at the corners (steady wave). Right: multi-scale method, the plasmons propagates towards the corners.
+	        </center>
+  
+    <h4>References </h4>
+	<li >
+		Mesh requirements for the finite element approximation of problems with sign-changing coefficients,<br>
+	<span class='author'>A.-S. Bonnet-Ben Dhia</span>, <span class='author'>C. Carvalho, <span class='author'>P. Ciarlet Jr.</span>, Numerische Mathematik, pp 1-38, 2018.
+	</li>	
+	<li >
+		Eigenvalue problems with sign-changing coefficients,<br>
+ <span class='author'>C. Carvalho</span>, <span class='author'>L. Chesnel, <span class='author'>P. Ciarlet Jr.</span>, Compte Rendus Mathématiques, 355 (6), pp 671-675, 2017. </span>
+	</li>
+<li >
+	On the use of Perfectly Matched Layers at corners for scattering problems with sign-changing coefficients,<br>
+<span class='author'>A.-S. Bonnet-Ben Dhia</span>, <span class='author'>C. Carvalho</span>, <span class='author'>L. Chesnel, <span class='author'>P. Ciarlet Jr.</span>, Journal of Computational Physics, 322, pp 224-247, 2016. </li>	
+
+<h4>Ongoing projects: </h4>
+ <li>T-conforming mesh generator</li>
+ <li>Limiting Amplitude Principle</li>	
 			
-	 
-   <h2>Light scattering by nano-particles</h2>	
-		
-   <p> 
-	   The study light scattering by metal nano-particles situated closely over a substrate is a fundamental problem for understanding the extent to which controlling optical fields on the nanoscale leads to desired effects at macroscopic scales where measurements are taken. Because these metal nano-particles are situated closely to a substrate,surface plasmons interact strongly with the substrate surface. To design an efficient numerical method, we combine several techniques such as multi-scale finite element method, boundary integral equations, and asymptotic analysis. 
- </p>	
- <div>
-	  <img src="img/results2.png" width="560" >	 <br>
-	  	Light scattering by a triangular nano-particle. Left: over a perfect conductor. Right: without a substrate.
- </div><br>
 
-    -->    
 
-	
-   
+  
   <!--
   <object id="VIDEO" type="video/x-ms-wmv" data="avecPML.wmv" width="360" height="270">
           <param name="src" value="avecPML.wmv" />

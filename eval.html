@@ -67,50 +67,53 @@
     <!-- #page: holds all page content, as well as footer -->
     <div id="page">
 
-     	 <h1>Research interests</h1>
-     	<br/>
-   	Partial Differential Equations, Waves propagation, Electromagnetism, Scattering, Metamaterials and Plasmonics Modeling, Numerical Analysis, Simulation and scientific computing, Finite Elements Method, Spectral theory, waveguides, PMLs, Kondratiev theory, singularities, Boundary integral methods, Asymptotic analysis
-	
-	</div>
-	<br>
-        <h1>Current research projects</h1>
-		Click on the image to know more.
-       <figure>
-	    <a href="FEM.html"><img src="img/summary_pmls.png" width="300"></a>
-		<figcaption>Finite Element Method for problems in plasmonic structures </figcaption>
-	</figure>
-	<figure>
-	    <a href="eval.html"><img src="img/3deval.png" width="300"></a>
-	<figcaption>Close evaluation of layer potentials </figcaption>
-</figure>
-<figure>
-	    <a href="transmission.html"><img src="img/transmission.png" width="300"></a>
-		<figcaption>Boundary integral methods for optical cloaking </figcaption>
-</figure>
-
-<!--  
-      <h2>Close-evaluation of layer potentials</h2>	
+     	 <h1>Close evaluation of layer potentials</h1>
+		 Sponsored by NSF DMS-1819052.
+  <h4>Framework</h4>
 		
       <p>
 The close-evaluation problem in boundary integral methods refers to large errors incurred when evaluating layer potentials at points near the boundary of the domain despite being accurate elsewhere in the domain. When using a high order Nyström method to numerically evaluate a layer potential, its high order accuracy will be effective for nearly all points in the domain. However, at close-evaluation points, this quadrature rule will produce an O(1) error. The goal is to address this error using asymptotic analysis of the nearly singular behavior. 	
 	 </p>
-	 <div>
-		  <img src="img/bie.png" width="560"><br>	
-		  Close evaluation for acoustic scattering. Left: standard Nyström method (O(1) close to the boundary). Right: asymptotic method with deferred correction.
-	 </div>	
-			
 	 
-   <h2>Light scattering by nano-particles</h2>	
-		
-   <p> 
-	   The study light scattering by metal nano-particles situated closely over a substrate is a fundamental problem for understanding the extent to which controlling optical fields on the nanoscale leads to desired effects at macroscopic scales where measurements are taken. Because these metal nano-particles are situated closely to a substrate,surface plasmons interact strongly with the substrate surface. To design an efficient numerical method, we combine several techniques such as multi-scale finite element method, boundary integral equations, and asymptotic analysis. 
- </p>	
+    <h4>Asymptotic method with deferred correction</h4>
+We developed a numerical method based on asymptotic approximations of the kernel via rational trigonometric functions to capture the peaked behavior for close-evaluation points. Subtracting this approximation allows to use standard Nystrom method, and the remainder can be computed analytically using Fourier convolution sum. 
  <div>
-	  <img src="img/results2.png" width="560" >	 <br>
-	  	Light scattering by a triangular nano-particle. Left: over a perfect conductor. Right: without a substrate.
- </div><br>
+	  <img src="img/bie.png" width="560"><br>	
+	  Close evaluation for acoustic scattering. Left: standard Nyström method (O(1) close to the boundary). Right: asymptotic method with deferred correction.
+ </div>	
 
-    -->    
+	   <h4>Asymptotic approximations methods</h4>
+       <p>
+We developed asymptotic approximations methods based matched asymptotic expansions of layer potentials in 2D and 3D to control the error with respect to the distance from the boundary. 
+ 	 </p>
+	 <div>
+		  <img src="img/3deval.png" width="600"><br>	
+		  Close evaluation for the double-layer potential for Laplace's equation in 3D.
+	 </div>	
+	 
+	   <h4>References </h4>
+	<li >
+		Codes available on <a href="https://github.com/arnolddkim/Asymptotic-DLP"title="GitHub">GitHub.</a>
+	</li>
+	
+	<li >
+		Asymptotic approximations for the close evaluation of double-layer potentials, <br>
+ <span class='author'>C. Carvalho</span>, <span class='author'>S. Khatri</span>, <span class='author'>A. D. Kim</span>, submitted. </span>
+	</li>
+		<li >
+			Close evaluation for layer potentials in three dimensions, <br>
+	 <span class='author'>C. Carvalho</span>, <span class='author'>S. Khatri</span>, <span class='author'>A. D. Kim</span>, submitted. </span>
+		</li>
+		<li >
+			Asymptotic analysis for close evaluation for layer potentials, <br>
+	 <span class='author'>C. Carvalho</span>, <span class='author'>S. Khatri</span>, <span class='author'>A. D. Kim</span>, Journal of Computational Physics, 655, pp 327-341, 2018. </span>
+		</li>
+		
+		<h4>Ongoing projects: </h4>
+		 <li>Applications to Stokes flow</li>
+		 <li>Application to transmission problems</li>	
+
+			       
 
 	
    
