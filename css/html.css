@@ -242,10 +242,3 @@ img.floatLeft {
   margin: 5px 15px 10px 0px;
 }
 
-a img {  
-  border: 4px solid #D5C9C2;
-}
-
-a:hover img {  
-  border: 4px solid #BAAAA1;
-}
