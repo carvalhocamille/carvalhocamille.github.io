@@ -21,22 +21,22 @@
             return (items.length) ? $(this).html($.shuffle(items)) : this;
         });
     }
-
+    
     $.shuffle = function(arr) {
         for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
         return arr;
     }
-
-    })($);
-
-
+    
+    })($);  
+    
+    
     $(function() {
     foo = $( "#sortable" ).sortable();
     //$( "#sortable" ).disableSelection();
     $('#sortable').shuffle();
     $('.next-level').hide();
     });
-
+    
     check= function(){
         var elems = $('.shuff');
 		var ok = 0;
@@ -49,7 +49,7 @@
 				ok = ok+1;
             } else {
                 elem.css('border-color','red');
-            }
+            } 
 
          }
 		 if (ok === elems.length){
@@ -66,13 +66,13 @@
 <h1> Fête de la science : Quiz 4</h1>
 </center>
 <center>
-	<h2>
+	<h2> 
 		<font face="Verdana" color="#0677AF">Imagine qu'à la place d'un caillou ce soit ton doigt qui touche l'eau, en rythme (tu mets ton doigt dans l'eau, tu le ressors, et tu remets, etc.) et pendant longtemps. A ce moment là les ronds dans l'eau se forment tout le temps. C'est qui est représenté ici : on appelle ça le régime harmonique. </font></h2>
 		</center>
 		<center>
-			<h2>
-				<font face="Verdana" color="#0677AF">
-			Pour chaque solution (image de gauche) associe le bon milieu (image à droite) en déplaçant les images de droite. Tu peux vérifier à tout moment si tu as juste en cliquant sur le bouton "Vérifier"
+			<h2> 
+				<font face="Verdana" color="#0677AF">			
+			Pour chaque solution (image de gauche) associe le bon milieu (image à droite) en déplaçant les images de droite. Tu peux vérifier à tout moment si tu as juste en cliquant sur le bouton "Vérifier" 
 		</font>
 	</h2>
 </center>
@@ -90,7 +90,7 @@
         <td style='width:10%'>
             <button onclick="check()" > Vérifier </button>
             <button onclick="$('#sortable').shuffle();$('.shuff').css('border-color','lightgrey'); $('.next-level').hide();"> Mélanger </button>
-			<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick>
+			<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick> 
 			</br>
         </td>
         <td style='width:40%'>
@@ -106,7 +106,7 @@
 <table>
 
 
-
-
+ 
+ 
 </body>
 </html>

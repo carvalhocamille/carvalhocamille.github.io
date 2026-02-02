@@ -21,22 +21,22 @@
             return (items.length) ? $(this).html($.shuffle(items)) : this;
         });
     }
-
+    
     $.shuffle = function(arr) {
         for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
         return arr;
     }
-
-    })($);
-
-
+    
+    })($);  
+    
+    
     $(function() {
     foo = $( "#sortable" ).sortable();
     //$( "#sortable" ).disableSelection();
     $('#sortable').shuffle()
-
+    
     });
-
+    
     check= function(){
         var elems = $('.shuff');
 
@@ -47,7 +47,7 @@
                 elem.css('border-color','green');
             } else {
                 elem.css('border-color','red');
-            }
+            } 
 
          }
 
@@ -86,7 +86,7 @@
 <table>
 
 
-
-
+ 
+ 
 </body>
 </html>

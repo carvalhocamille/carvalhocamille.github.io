@@ -21,22 +21,22 @@
             return (items.length) ? $(this).html($.shuffle(items)) : this;
         });
     }
-
+    
     $.shuffle = function(arr) {
         for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
         return arr;
     }
-
-    })($);
-
-
+    
+    })($);  
+    
+    
     $(function() {
     foo = $( "#sortable" ).sortable();
     //$( "#sortable" ).disableSelection();
     $('#sortable').shuffle()
-
+    
     });
-
+    
     check= function(){
         var elems = $('.shuff');
 
@@ -47,7 +47,7 @@
                 elem.css('border-color','green');
             } else {
                 elem.css('border-color','red');
-            }
+            } 
 
          }
 
@@ -57,7 +57,7 @@
   </script>
 </head>
 <body>
-
+	
 	<h1> Quiz n°3 : propagation en temps d'une source ponctuelle dans des mileux avec des obstacles'</h1>
 	<h2> Petite introduction</h2>
 
@@ -70,16 +70,16 @@
 
 	</p>
 	<table style='width:100%'>
-
+   
 	        <td style='width:70%'>
-				<input type="button" name="Commencer le Niveau 3" value="Commencer le Niveau 3" onclick="self.location.href='Quiz3.html'"onclick>
-				<input type="button" name="Niveaui précédent" value="Niveau précédent" onclick="self.location.href='AccueilQuiz2.html'"onclick>
-				<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick>
-				<input type="button" name="Niveaui suivant" value="Niveau suivant" onclick="self.location.href='AccueilQuiz4.html'"onclick>
+				<input type="button" name="Commencer le Niveau 3" value="Commencer le Niveau 3" onclick="self.location.href='Quiz3.html'"onclick> 
+				<input type="button" name="Niveaui précédent" value="Niveau précédent" onclick="self.location.href='AccueilQuiz2.html'"onclick>  
+				<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick> 
+				<input type="button" name="Niveaui suivant" value="Niveau suivant" onclick="self.location.href='AccueilQuiz4.html'"onclick>      
 	        </td>
 
 	<table>
-
-
+ 
+ 
 </body>
 </html>

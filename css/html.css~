@@ -1,6 +1,6 @@
 /**************************************************************
    AUTHOR:  Pat Heard (fullahead.org)
-   DATE:    2006.09.12
+   DATE:    2006.09.12 
    PURPOSE: Styles the html elements
  **************************************************************/
 
@@ -31,10 +31,10 @@ h1, h2, h3, h4, h5, h6, p, dl {
   padding: 10px 0;
 }
 
-h1 {
+h1 {   
   clear: both;
   font: 400 1.9em georgia, serif;
-  color: #532406;
+  color: #532406;  
 }
 
 h2 {
@@ -55,7 +55,7 @@ h4 {
 
 a {
   text-decoration: none;
-  color: #5E9040;
+  color: #5E9040;  
   border-bottom: 1px solid #B8E78B;
 }
 
@@ -71,7 +71,7 @@ a:hover {
 }
 
 
-ol {
+ol {  
   margin: 10px 30px;
   padding: 0 30px;
 
@@ -121,11 +121,11 @@ code {
   padding: 10px;
   display: block;
   overflow: auto;
-
+  
   font: 400 1em courier, monospace;
   line-height: 120%;
   white-space: pre;
-
+  
   background: #F4F4F4;
   border-bottom: 1px solid #D3D3D3;
 }
@@ -138,8 +138,8 @@ code {
 
 table {
   width: 100%;
-  margin-bottom: 10px;
-
+  margin-bottom: 10px;  
+  
   font-size: 1em;
   border-collapse: collapse;
 }
@@ -149,7 +149,7 @@ table caption {
   padding: 0 0 0.5em 3px;
 
   font: 400 0.8em georgia, sans-serif;
-  text-align: left;
+  text-align: left;  
 }
 
 table th,
@@ -187,7 +187,7 @@ label {
   text-align: right;
   width: 9em;
   padding-right: 1em;
-
+  
 }
 
 
@@ -196,18 +196,18 @@ textarea,
 select {
   padding: 4px;
   font: 400 1em georgia, sans-serif;
-
+  
   color: #666;
   background: #FFF;
   border-width: 1px;
   border-style: solid;
-  border-color: #888 #DDD #DDD #888;
+  border-color: #888 #DDD #DDD #888;  
 }
 
 
 input:focus,
 textarea:focus,
-select:focus {
+select:focus {  
   padding: 3px;
   color: #000;
   background: #F1FFE3;
@@ -239,17 +239,17 @@ input.button {
  **************************************************************/
 
 img.floatRight {
-  margin: 5px 0px 10px 15px;
+  margin: 5px 0px 10px 15px;  
 }
 
 img.floatLeft {
   margin: 5px 15px 10px 0px;
 }
 
-a img {
+a img {  
   border: 4px solid #D5C9C2;
 }
 
-a:hover img {
+a:hover img {  
   border: 4px solid #BAAAA1;
 }

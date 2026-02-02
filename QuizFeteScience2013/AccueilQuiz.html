@@ -21,22 +21,22 @@
             return (items.length) ? $(this).html($.shuffle(items)) : this;
         });
     }
-
+    
     $.shuffle = function(arr) {
         for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
         return arr;
     }
-
-    })($);
-
-
+    
+    })($);  
+    
+    
     $(function() {
     foo = $( "#sortable" ).sortable();
     //$( "#sortable" ).disableSelection();
     $('#sortable').shuffle()
-
+    
     });
-
+    
     check= function(){
         var elems = $('.shuff');
 
@@ -47,7 +47,7 @@
                 elem.css('border-color','green');
             } else {
                 elem.css('border-color','red');
-            }
+            } 
 
          }
 
@@ -63,7 +63,7 @@
 	<center>
 <h2 style='width:70%'>
 	<font face="Verdana" color="#0677AF">
-	Quand tu jettes un caillou dans l’eau, il se forme un rond qui devient de plus en plus grand. Quand cette onde arrive au bord du bassin, elle se réfléchit et donne naissance à un autre rond qui va à son tour se propager. Et si tu verses un peu d’huile dans l’eau, tu verras que l’onde va se déformer à la traversée de la tâche d’huile et que des nouvelles ondes seront produites.
+	Quand tu jettes un caillou dans l’eau, il se forme un rond qui devient de plus en plus grand. Quand cette onde arrive au bord du bassin, elle se réfléchit et donne naissance à un autre rond qui va à son tour se propager. Et si tu verses un peu d’huile dans l’eau, tu verras que l’onde va se déformer à la traversée de la tâche d’huile et que des nouvelles ondes seront produites. 
 	</font>
 </h2>
 </center>
@@ -71,7 +71,7 @@
 <h2 style='width:70%'>
 	<font face="Verdana" color="#0677AF">
 La forme de l’onde dépend donc des obstacles qu’elle rencontre ainsi que  de la nature des milieux qu’elle traverse. Sauras-tu associer une onde à son milieu ?
-A toi de jouer !
+A toi de jouer !  
 </font>
 </h2>
 </center>
@@ -81,10 +81,10 @@ A toi de jouer !
  <center>
 <table style='width:100%'>
         <td align="center">
-			<input type="button" name="Niveau 1" value="Niveau 1" onclick="self.location.href='Quiz2.html'"onclick>
-			<input type="button" name="Niveau 2" value="Niveau 2" onclick="self.location.href='Quiz4.html'"onclick>
-			<input type="button" name="Niveau 3" value="Niveau 3" onclick="self.location.href='Quiz3.html'"onclick>
-			<input type="button" name="Niveau 4" value="Niveau 4" onclick="self.location.href='Quiz1.html'"onclick>
+			<input type="button" name="Niveau 1" value="Niveau 1" onclick="self.location.href='Quiz2.html'"onclick> 
+			<input type="button" name="Niveau 2" value="Niveau 2" onclick="self.location.href='Quiz4.html'"onclick> 
+			<input type="button" name="Niveau 3" value="Niveau 3" onclick="self.location.href='Quiz3.html'"onclick> 
+			<input type="button" name="Niveau 4" value="Niveau 4" onclick="self.location.href='Quiz1.html'"onclick>     
         </td>
 <table>
 	</center>
@@ -93,7 +93,7 @@ A toi de jouer !
 </center>
 
 
-
-
+ 
+ 
 </body>
 </html>

@@ -38,7 +38,7 @@ a {
 }
 
 /* Prints the URL after a link in CSS2 supporting browsers */
-a:link:after,
+a:link:after, 
 a:visited:after {
    content: " (" attr(href) ") ";
    font-size: 90%;
@@ -57,3 +57,6 @@ a:visited:after {
   margin: 0 8%;
   padding: 0;
 }
+
+
+

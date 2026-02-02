@@ -22,22 +22,22 @@
             return (items.length) ? $(this).html($.shuffle(items)) : this;
         });
     }
-
+    
     $.shuffle = function(arr) {
         for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
         return arr;
     }
-
-    })($);
-
-
+    
+    })($);  
+    
+    
     $(function() {
     foo = $( "#sortable" ).sortable();
     //$( "#sortable" ).disableSelection();
     $('#sortable').shuffle();
     $('.next-level').hide();
     });
-
+    
     check= function(){
         var elems = $('.shuff');
 		var ok = 0;
@@ -50,7 +50,7 @@
 				ok = ok+1;
             } else {
                 elem.css('border-color','red');
-            }
+            } 
 
          }
 		 if (ok === elems.length){
@@ -67,8 +67,8 @@
 	<h1> Fête de la science : Quiz 3</h1>
 	</center>
 	<center>
-	<h2>
-		<font face="Verdana" color="#0677AF">A chaque solution (vidéo de gauche) associe le milieu correspondant (image de droite). Tu peux vérifier à tout moment si tu as juste en cliquant sur le bouton "Vérifier"
+	<h2> 
+		<font face="Verdana" color="#0677AF">A chaque solution (vidéo de gauche) associe le milieu correspondant (image de droite). Tu peux vérifier à tout moment si tu as juste en cliquant sur le bouton "Vérifier"  
 		</font>
 	</h2>
 	</center>
@@ -82,13 +82,13 @@
 						<source src="video/OndesPlanSpecR4Theta0p25Dt0p04.webmvp8.webm" type="video/webm"></video></li>
 				    <li class=" ui-state-default" id='item3' style="height:240px;"><video width="240" height="240" controls >
 						<source src="video/hmg.webm" type="video/webm"></video></li>
-
+   
 	            </ul>
 	        </td>
 	        <td style='width:25%'>
 	            <button onclick="check()" > Vérifier </button>
 	            <button onclick="$('#sortable').shuffle();$('.shuff').css('border-color','lightgrey'); $('.next-level').hide();"> Mélanger </button>
-				<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick>
+				<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick> 
 				</br>
 	            <button class='next-level' style='display:none' onclick="self.location.href='Quiz1.html'"> Niveau Suivant </button>
 	        </td>
@@ -103,7 +103,7 @@
 	<table>
 
 
-
-
+ 
+ 
 </body>
 </html>

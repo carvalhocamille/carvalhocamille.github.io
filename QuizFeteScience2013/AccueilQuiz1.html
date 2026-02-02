@@ -21,22 +21,22 @@
             return (items.length) ? $(this).html($.shuffle(items)) : this;
         });
     }
-
+    
     $.shuffle = function(arr) {
         for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
         return arr;
     }
-
-    })($);
-
-
+    
+    })($);  
+    
+    
     $(function() {
     foo = $( "#sortable" ).sortable();
     //$( "#sortable" ).disableSelection();
     $('#sortable').shuffle()
-
+    
     });
-
+    
     check= function(){
         var elems = $('.shuff');
 
@@ -47,7 +47,7 @@
                 elem.css('border-color','green');
             } else {
                 elem.css('border-color','red');
-            }
+            } 
 
          }
 
@@ -70,16 +70,16 @@ bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla bla </br>
 
 </p>
 <table style='width:100%'>
-
+   
         <td style='width:70%'>
-			<input type="button" name="Commencer le Niveau 1" value="Commencer le Niveau 1" onclick="self.location.href='Quiz1.html'"onclick>
-			<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick>
+			<input type="button" name="Commencer le Niveau 1" value="Commencer le Niveau 1" onclick="self.location.href='Quiz1.html'"onclick> 
+			<input type="button" name="Retour à l'accueil" value="Retour à l'accueil" onclick="self.location.href='AccueilQuiz.html'"onclick>    
         </td>
 
 <table>
 
 
-
-
+ 
+ 
 </body>
 </html>
