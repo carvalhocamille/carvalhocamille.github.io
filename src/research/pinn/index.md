@@ -5,7 +5,7 @@ layout: layouts/page.njk
 locale: en
 ---
 
-Publications : 
+Publications : [6], [17].
 
 Funding : 
 

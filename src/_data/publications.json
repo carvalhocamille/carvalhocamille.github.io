@@ -27,11 +27,25 @@
   "journal_articles": [
       {
         "authors": [
+			"V. Bokil", 
+			"C. Carvalho", 
+			"R. Ceja Ayala", 
+			"M. Fabien", 
+			"R. Maity", 
+			"V. Obieke", 
+			"C. Scheid"
+        ],
+        "title": "Comparison of Structure Preserving Discretizations for the Cubic Nonlinear Schrödinger equation",
+		"volume": "(in preparation)",
+        "year": 2026
+      },
+      {
+        "authors": [
           "C. Carvalho",
           "Z. Moitier"
         ],
         "title": "Less is more : (sub)optimal locally symmetric meshes for optimal FEM convergence in transmission problems with sign-changing coefficient",
-		"pages": "(in preparation)",
+		"volume": "(in preparation)",
         "year": 2026
       },
       {
@@ -42,7 +56,7 @@
           "A. K. Tornberg"
         ],
         "title": "Accurate Evaluation of Layer Potential Using Orthogonal Polynomials",
-		"pages": "(in preparation)",
+		"volume": "(in preparation)",
         "year": 2026
       },
       {
@@ -53,7 +67,7 @@
           "C. Tsogka"
         ],
         "title": "Discretization in Multilayered Media with High Contrasts: Is It All About the Boundaries?",
-		"pages": "(about to be submitted)",
+		"volume": "(about to be submitted)",
         "year": 2026
       },
       {
@@ -62,7 +76,7 @@
           "B. Latham"
         ],
         "title": "Scattering by ideal plasmonic nanoparticles: an Evanescent/Propagative Plane Wave Discontinuous Galerkin (EPPWDG) approach",
-		"pages": "(in preparation)",
+		"volume": "(in preparation)",
         "year": 2026
       },
     {

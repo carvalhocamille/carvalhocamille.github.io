@@ -5,7 +5,7 @@ layout: layouts/page.njk
 locale: en
 ---
 
-Publications : [1-4], [11-12].
+Publications : [1-4], [11-13], [16].
 
 Funding : NSF DMS-2009366 ($295k, single PI, 2020-2024) 
 
@@ -19,7 +19,7 @@ Plasmonic structures are made of a positive material (dielectrics) and a negativ
 
 Guiding and confining such particular waves in nanophotonic devices reveal a great interest to overcome the diffraction limit, in nanophotonic sensing and related applications. 
 
-Due to potential sign-changing coefficients, standards methods fail to capture plasmonic phenomena. We propose several technique to address this problem.
+Due to potential sign-changing coefficients, standard methods fail to capture plasmonic phenomena. We propose several technique to address this problem.
 
 ## Challenges
 
@@ -47,7 +47,7 @@ A package providing automatic locally T-conforming mesh is under construction.
 
 ##### with A.-S. Bonnet Ben Dhia, L. Chesnel, P. Ciarlet
 
-The T-coercivity theory allows to establish well-posedness and FEM convergence under some conditions on the optical parameters of the scattered. In the critical regime, where the problem is ill-posed, highly oscillatory singularities (called black-hole waves) appear at the corners. We proposed to use Perfectly Matched Layers at the corners to capture them. This approach is motivated by a quasi-static approximation and a change of coordinates, allowing to interpret the singularities as propagative modes in a waveguide. 
+The T-coercivity theory allows to establish well-posedness and FEM convergence under some conditions on the optical parameters of the scatterer. In the critical regime, where the problem is ill-posed, highly oscillatory singularities (called black-hole waves) appear at the corners. We proposed to use Perfectly Matched Layers at the corners to capture them. This approach is motivated by a quasi-static approximation and a change of coordinates, allowing to interpret the singularities as propagative modes in a waveguide. 
 
 <div style="display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap; justify-content: center; margin: var(--space-xl) 0;">
   <img src="/assets/img/summary_pmls.png" alt="summary method" style="max-width: 300px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
@@ -58,7 +58,7 @@ The T-coercivity theory allows to establish well-posedness and FEM convergence u
 
 ##### with B. Latham, Z. Moitier
 
-While the T-coercivity can guarantee well-posedness of the scattering problems in plasmonic structures, in practice FEM exhibits numerical instabilities at specific wavenumber inputs. Those values are close to so-called scattering resonances. In general, it is impossible to have the exact scattering resonances. Using the Black-Box Scattering Theory and the quais-modes analysis, we estalished their existence and provided an asymptotic characterization. 
+While the T-coercivity can guarantee well-posedness of the scattering problems in plasmonic structures, in practice FEM exhibits numerical instabilities at specific wavenumber inputs. Those values are close to so-called scattering resonances. In general, it is impossible to have the exact scattering resonances. Using the Black-Box Scattering Theory and the quasi-modes analysis, we estalished their existence and provided an asymptotic characterization. 
 
 While FEM fails to capture them due to their high amplitude signal, we investigated a Trefftz approach (called Evanescent Plane Wave Discontinuous Galerkin) to better mimic their local behavior. Well-posedness of the associated discrete problem has been established, and gets rid of the high mesh constrains imposed by T-coercivity.
 

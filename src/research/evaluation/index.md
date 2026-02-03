@@ -5,7 +5,7 @@ layout: layouts/page.njk
 locale: en
 ---
 
-Publications : [5], [7-8].
+Publications : [5], [7-8], [10], [15].
 
 Funding : NSF DMS-1819052 ($200k, PI, 2018-2022) 
 

@@ -18,7 +18,7 @@ caused by several ones contribute to field enhancement.
 
 Using matched asymptotic expansions of layer potentials and respecting the symmetry of the scatterers, we developped a Quadrature by Parity Asymptotic Expansions (QPAX) to address the close evaluation problem arising at the BIE level, when the particules are really thin. 
 
-The method yields linear convergence with respect to the boundary, and can be extended to higher order. 
+The method yields linear convergence with respect to the distance from the boundary, and can be extended to higher order. 
 
 Extensions to more complex structures are under investigation. 
 
