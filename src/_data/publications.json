@@ -28,12 +28,41 @@
       {
         "authors": [
           "C. Carvalho",
+          "Z. Moitier"
+        ],
+        "title": "Less is more : (sub)optimal locally symmetric meshes for optimal FEM convergence in transmission problems with sign-changing coefficient",
+		"pages": "(in preparation)",
+        "year": 2026
+      },
+      {
+        "authors": [
+          "C. Carvalho",
+          "R. Cortez",
+          "S. Khatri",
+          "A. K. Tornberg"
+        ],
+        "title": "Accurate Evaluation of Layer Potential Using Orthogonal Polynomials",
+		"pages": "(in preparation)",
+        "year": 2026
+      },
+      {
+        "authors": [
+          "C. Carvalho",
           "S. Chaillat",
           "E. Cortes",
           "C. Tsogka"
         ],
         "title": "Discretization in Multilayered Media with High Contrasts: Is It All About the Boundaries?",
-		"pages": (about to be submitted),
+		"pages": "(about to be submitted)",
+        "year": 2026
+      },
+      {
+        "authors": [
+          "C. Carvalho",
+          "B. Latham"
+        ],
+        "title": "Scattering by ideal plasmonic nanoparticles: an Evanescent/Propagative Plane Wave Discontinuous Galerkin (EPPWDG) approach",
+		"pages": "(in preparation)",
         "year": 2026
       },
     {
