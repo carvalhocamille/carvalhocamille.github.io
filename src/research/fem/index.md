@@ -5,7 +5,7 @@ layout: layouts/page.njk
 locale: en
 ---
 
-## Plasmonic Structures
+## Modeling Plasmonic Phenomena
 
 Plasmonic structures are made of a positive material (dielectrics) and a negative material (metals at optical frequencies, metamaterials). Surface electromagnetic waves called surface plasmons can appear at the interface.
 
@@ -13,60 +13,56 @@ Plasmonic structures are made of a positive material (dielectrics) and a negativ
   <img src="/assets/img/plasmon.png" alt="Plasmonic structure" style="max-width: 400px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
 </div>
 
-## Applications
+Guiding and confining such particular waves in nanophotonic devices reveal a great interest to overcome the diffraction limit, in nanophotonic sensing and related applications. 
 
-Guiding and confining such particular waves in nanophotonic devices reveal a great interest to overcome the diffraction limit, in nanophotonic sensing and related applications.
+Due to potential sign-changing coefficients, standards methods fail to capture plasmonic phenomena. We propose several technique to address this problem.
 
 ## Challenges
 
 - Multiple scales
 - Surface plasmons are very sensitive to the geometry (corners)
-- Inaccurate predictions of the near field
+- Inaccurate predictions of the near-field
 - Hyper-oscillating singularities, called black-hole waves, appear at the corners
 - Standard FEM fail due to spurious reflections
 
-## Novel Numerical Method using FEM
+## Novel Numerical Methods using FEM
+
+Publications : [1-4], [11-12].
+
+Funding : NSF DMS-2009366 ($295k, single PI, 2020-2024) 
 
 ### Mesh requirements to ensure FEM optimal convergence via the T-coercivity
 
-<div style="display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap; justify-content: center; margin: var(--space-xl) 0;">
-  <img src="/assets/img/mesh0.png" alt="Standard mesh" style="max-width: 300px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
-  <img src="/assets/img/mesh1.png" alt="T-conforming mesh" style="max-width: 300px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
-</div>
+##### with A.-S. Bonnet Ben Dhia, P. Ciarlet, Z. Moitier
 
-An hexagonal cavity with an hexagonal negative material inclusion. Left: standard mesh. Right: T-conforming mesh.
+Well-posedness of transmission problems with sign-changing coefficients has been established using the so-called T-coercivity theory. However, in practice it is not as straightforward to apply it. We designed "FEM friendly" T operators to guarantee optimal FEM convergence. Those operators are based on rotations and symmetries, they ensure same well-posedness and are easily satisfied at the discrete level by designing locally symmetric meshes. 
+A package providing automatic locally T-conforming mesh is under construction. 
+
+<div style="display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap; justify-content: center; margin: var(--space-xl) 0;">
+  <img src="/assets/img/mesh0.png" alt="Standard mesh" style="max-width: 200px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+  <img src="/assets/img/mesh1.png" alt="T-conforming mesh" style="max-width: 200px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+</div>
 
 ### Use of Perfectly Matched Layers at the corners to capture the black-hole waves
 
-<div style="text-align: center; margin: var(--space-xl) 0;">
-  <video width="100%" style="max-width: 640px; border-radius: var(--radius-md); box-shadow: var(--shadow-lg);" controls loop muted>
-    <source src="/assets/video/PASPML1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <video width="100%" style="max-width: 640px; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); margin-top: var(--space-md);" controls loop muted>
-    <source src="/assets/video/PML.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p style="margin-top: var(--space-md); font-style: italic; color: var(--color-text-light);">
-    Scattering problem by a plane wave of a metallic inclusion. Top: standard FEM, spurious reflections at the corners (steady wave). Bottom: multi-scale method, the plasmons propagate towards the corners.
-  </p>
+##### with A.-S. Bonnet Ben Dhia, L. Chesnel, P. Ciarlet
+
+The T-coercivity theory allows to establish well-posedness and FEM convergence under some conditions on the optical parameters of the scattered. In the critical regime, where the problem is ill-posed, highly oscillatory singularities (called black-hole waves) appear at the corners. We proposed to use Perfectly Matched Layers at the corners to capture them. This approach is motivated by a quasi-static approximation and a change of coordinates, allowing to interpret the singularities as propagative modes in a waveguide. 
+
+<div style="display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap; justify-content: center; margin: var(--space-xl) 0;">
+  <img src="/assets/img/summary_pmls.png" alt="summary method" style="max-width: 300px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
 </div>
 
-## References
 
-- **Mesh requirements for the finite element approximation of problems with sign-changing coefficients**
-  A.-S. Bonnet-Ben Dhia, C. Carvalho, P. Ciarlet Jr.
-  *Numerische Mathematik*, pp 1-38, 2018.
+### Asymptotic characterization of plasmonic scattering resonances and Trefftz methods 
 
-- **Eigenvalue problems with sign-changing coefficients**
-  C. Carvalho, L. Chesnel, P. Ciarlet Jr.
-  *Compte Rendus Mathématiques*, 355 (6), pp 671-675, 2017.
+##### with B. Latham, Z. Moitier
 
-- **On the use of Perfectly Matched Layers at corners for scattering problems with sign-changing coefficients**
-  A.-S. Bonnet-Ben Dhia, C. Carvalho, L. Chesnel, P. Ciarlet Jr.
-  *Journal of Computational Physics*, 322, pp 224-247, 2016.
+While the T-coercivity can guarantee well-posedness of the scattering problems in plasmonic structures, in practice FEM exhibits numerical instabilities at specific wavenumber inputs. Those values are close to so-called scattering resonances. In general, it is impossible to have the exact scattering resonances. Using the Black-Box Scattering Theory and the quais-modes analysis, we estalished their existence and provided an asymptotic characterization. 
 
-## Ongoing Projects
+While FEM fails to capture them due to their high amplitude signal, we investigated a Trefftz approach (called Evanescent Plane Wave Discontinuous Galerkin) to better mimic their local behavior. Well-posedness of the associated discrete problem has been established, and gets rid of the high mesh constrains imposed by T-coercivity.
 
-- T-conforming mesh generator
-- Limiting Amplitude Principle
+<div style="display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap; justify-content: center; margin: var(--space-xl) 0;">
+  <img src="/assets/img/scat_res.png" alt="summary method" style="max-width: 500px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+</div>
+

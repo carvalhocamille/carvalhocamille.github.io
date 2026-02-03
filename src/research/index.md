@@ -9,7 +9,7 @@ locale: en
 
 Partial Differential Equations, Waves propagation, Electromagnetism, Scattering, Metamaterials and Plasmonics Modeling, Numerical Analysis, Simulation and scientific computing, Finite Elements Method, Spectral theory, waveguides, PMLs, Kondratiev theory, singularities, Boundary integral methods, Asymptotic analysis, Close evaluation problem, Optical cloaking.
 
-## Current Research Projects
+## Some Research Projects
 
 <div class="research-grid">
   <div class="research-project">
