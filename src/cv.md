@@ -34,7 +34,7 @@ Applied Math Department, University of California Merced
 ## Education
 
 **PhD in Applied Mathematics**
-ENSTA Paris (ParisTech), France
+ENSTA Paris, France
 2012 - 2015
 
 **Master 2 AN&EDP**
