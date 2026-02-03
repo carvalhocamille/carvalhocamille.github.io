@@ -1,8 +1,9 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/quiz");
   eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy(".nojekyll");
   eleventyConfig.addPassthroughCopy("historical");
   eleventyConfig.addPassthroughCopy("css");
 
@@ -10,16 +11,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("src/assets/css/");
 
   // Collections for content
-  eleventyConfig.addCollection("posts", function(collectionApi) {
+  eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/**/*.md");
   });
 
   // Custom filter for formatting dates
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return new Date(dateObj).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    return new Date(dateObj).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   });
 
@@ -29,7 +30,7 @@ module.exports = function(eleventyConfig) {
   let options = {
     html: true,
     breaks: false,
-    linkify: true
+    linkify: true,
   };
   let markdownLib = markdownIt(options).use(markdownItAttrs);
   eleventyConfig.setLibrary("md", markdownLib);
@@ -39,11 +40,11 @@ module.exports = function(eleventyConfig) {
       input: "src",
       output: "_site",
       includes: "_includes",
-      data: "_data"
+      data: "_data",
     },
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk"
+    dataTemplateEngine: "njk",
   };
 };
