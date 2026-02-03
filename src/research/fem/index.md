@@ -5,6 +5,10 @@ layout: layouts/page.njk
 locale: en
 ---
 
+Publications : [1-4], [11-12].
+
+Funding : NSF DMS-2009366 ($295k, single PI, 2020-2024) 
+
 ## Modeling Plasmonic Phenomena
 
 Plasmonic structures are made of a positive material (dielectrics) and a negative material (metals at optical frequencies, metamaterials). Surface electromagnetic waves called surface plasmons can appear at the interface.
@@ -26,10 +30,6 @@ Due to potential sign-changing coefficients, standards methods fail to capture p
 - Standard FEM fail due to spurious reflections
 
 ## Novel Numerical Methods using FEM
-
-Publications : [1-4], [11-12].
-
-Funding : NSF DMS-2009366 ($295k, single PI, 2020-2024) 
 
 ### Mesh requirements to ensure FEM optimal convergence via the T-coercivity
 

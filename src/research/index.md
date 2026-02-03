@@ -46,7 +46,7 @@ Partial Differential Equations, Waves propagation, Electromagnetism, Scattering,
     <a href="/research/thin/">
       <img src="/assets/img/thin.png" alt="BIE for thin structures">
       <div class="research-project-content">
-        <h3>Boundary integral methos in thin structures</h3>
+        <h3>Boundary integral methods in thin structures</h3>
         <p>Efficient boundary integral methods for ellongated particles</p>
       </div>
     </a>

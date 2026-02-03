@@ -25,6 +25,17 @@
     }
   ],
   "journal_articles": [
+      {
+        "authors": [
+          "C. Carvalho",
+          "S. Chaillat",
+          "E. Cortes",
+          "C. Tsogka"
+        ],
+        "title": "Discretization in Multilayered Media with High Contrasts: Is It All About the Boundaries?",
+		"pages": (about to be submitted),
+        "year": 2026
+      },
     {
       "authors": [
         "C. Carvalho",

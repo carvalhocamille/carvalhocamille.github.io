@@ -5,55 +5,24 @@ layout: layouts/page.njk
 locale: en
 ---
 
-<p class="lead">Sponsored by NSF DMS-1819052</p>
+Publications : [5], [7-8].
 
-## Framework
+Funding : NSF DMS-1819052 ($200k, PI, 2018-2022) 
+
 
 The close-evaluation problem in boundary integral methods refers to large errors incurred when evaluating layer potentials at points near the boundary of the domain despite being accurate elsewhere in the domain. When using a high order Nyström method to numerically evaluate a layer potential, its high order accuracy will be effective for nearly all points in the domain. However, at close-evaluation points, this quadrature rule will produce an O(1) error. The goal is to address this error using asymptotic analysis of the nearly singular behavior.
 
-## Asymptotic Method with Deferred Correction
-
-We developed a numerical method based on asymptotic approximations of the kernel via rational trigonometric functions to capture the peaked behavior for close-evaluation points. Subtracting this approximation allows to use standard Nyström method, and the remainder can be computed analytically using Fourier convolution sum.
-
-<div style="text-align: center; margin: var(--space-2xl) 0;">
-  <img src="/assets/img/bie.png" alt="Close evaluation comparison" style="max-width: 700px; width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
-  <p style="margin-top: var(--space-md); font-style: italic; color: var(--color-text-light);">
-    Close evaluation for acoustic scattering. Left: standard Nyström method (O(1) close to the boundary). Right: asymptotic method with deferred correction.
-  </p>
-</div>
-
 ## Asymptotic Approximations Methods
+
+##### with R. Cortez, S. Khatri, A. D. Kim, C. McCullough
 
 We developed asymptotic approximations methods based on matched asymptotic expansions of layer potentials in 2D and 3D to control the error with respect to the distance from the boundary.
 
-<div style="text-align: center; margin: var(--space-2xl) 0;">
-  <img src="/assets/img/3deval.png" alt="3D close evaluation" style="max-width: 700px; width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
-  <p style="margin-top: var(--space-md); font-style: italic; color: var(--color-text-light);">
-    Close evaluation for the double-layer potential for Laplace's equation in 3D.
-  </p>
+In 2D the method relies on correcting a patch using the asymptotic expansions of the solution. In 3D the approach relies on a linear mapping and rotation to locate the close evaluation point at the north pole. Results show linear convergence with respect to the boundary and can be extended to higher order. 
+
+In the context of multiple scattering, the close evaluation problem even arises at the BIE level, where coupling effects are computed via nearly-singular behaviors. Using the previous approaches and combining spherical harmonic expansions, we provide accurate evaluation of the near-field for acoustic binding. 
+
+<div style="display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap; justify-content: center; margin: var(--space-xl) 0;">
+  <img src="/assets/img/summary-3d.png" alt="summary method" style="max-width: 300px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
 </div>
 
-## References
-
-- **Codes available on [GitHub](https://github.com/arnolddkim/Asymptotic-DLP)**
-
-- **Layer potential identities and subtraction techniques**
-  C. Carvalho, submitted.
-  [Code on GitHub](https://github.com/carvalhocamille/Subtraction_techniques)
-
-- **Close evaluation for layer potentials in three dimensions**
-  S. Khatri, A. D. Kim, R. Cortez, C. Carvalho, in revision.
-
-- **Asymptotic approximations for the close evaluation of double-layer potentials**
-  C. Carvalho, S. Khatri, A. D. Kim
-  *SIAM Journal for Scientific Computing*, 42, pp A504-A533, 2020.
-
-- **Asymptotic analysis for close evaluation for layer potentials**
-  C. Carvalho, S. Khatri, A. D. Kim
-  *Journal of Computational Physics*, 655, pp 327-341, 2018.
-
-## Ongoing Projects
-
-- Asymptotic methods for regions of high curvature
-- Applications to Stokes flow
-- Application to transmission problems
