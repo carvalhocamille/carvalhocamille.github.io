@@ -20,22 +20,26 @@ Member of the MMCS team at [Institut Camille Jordan](http://math.univ-lyon1.fr/)
 ## Previous Positions
 
 **Associate Researcher**
-Applied Mathematics, University of California Merced
+Applied Math Department, University of California Merced
 2022 - 2024
 
 **Assistant Professor**
-Applied Mathematics, University of California Merced
+Applied Math Department, University of California Merced
 2018 - 2022
 
-**Postdoctoral Researcher**
-POEMS, INRIA Saclay, France
+**Visiting Assistant Professor**
+Applied Math Department, University of California Merced
 2016 - 2018
 
 ## Education
 
 **PhD in Applied Mathematics**
 ENSTA Paris (ParisTech), France
-2012 - 2016
+2012 - 2015
+
+**Master 2 AN&EDP**
+Sorbonne Université, France
+2011 - 2012
 
 **Diplôme d'ingénieur (Engineering Degree)**
 ENSTA Paris, France
