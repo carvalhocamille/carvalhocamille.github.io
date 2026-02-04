@@ -7,7 +7,7 @@ locale: en
 
 <div class="profile-section">
   <div>
-    <img src="/assets/img/photos/c_carvalho_2025.jpg" alt="Camille Carvalho" class="profile-image">
+    <img src="/assets/img/photos/cc26.jpg" alt="Camille Carvalho" class="profile-image">
   </div>
   <div class="profile-content">
     <h1>Camille Carvalho</h1>
