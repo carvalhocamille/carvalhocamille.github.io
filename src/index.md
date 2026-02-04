@@ -40,12 +40,15 @@ locale: en
 
 ## Contact
 
-camille.carvalho AT insa-lyon dot fr 
+camille.carvalho AT insa-lyon DOT fr (+33 4 72 43 88 36)
 
-04 72 43 88 36
-
-Bureau 131, Bâtiment De Vinci, INSA Lyon, 21 Av. Einstein 69100 Villeurbanne
-
+````
+Address : 
+Bureau 131, Bâtiment De Vinci 
+INSA Lyon 
+21 Av. Einstein
+69100 Villeurbanne
+````
 ## Collaborators
 
 - (ICJ) Elie Bretin, Laurence Grammont, Yves Renard, Laurent Seppecher, Sophie Thery
