@@ -66,8 +66,11 @@
           "E. Cortes",
           "C. Tsogka"
         ],
+        "links": {
+          "preprint": "https://hal.science/hal-05520237"
+        },
         "title": "Discretization in Multilayered Media with High Contrasts: Is It All About the Boundaries?",
-		"volume": "(about to be submitted)",
+		"volume": "(submitted)",
         "year": 2026
       },
       {
@@ -144,7 +147,7 @@
       "authors": [
         "S. Khatri",
         "A. D. Kim",
-        "R. Cortes",
+        "R. Cortez",
         "C. Carvalho"
       ],
       "links": {
