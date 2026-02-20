@@ -18,6 +18,9 @@ locale: en
       From 2018 to 2024 I was affiliated to the <a href="https://appliedmath.ucmerced.edu/faculty">University of California Merced</a>, as an Assistant Professor of Applied Mathematics (2018-2022), then Associate Researcher (2022-2024).
     </p>
     <p>
+      Since 2024 I'm the co-director of the  <a href="https://moodle.insa-lyon.fr/course/index.php?categoryid=172">Pôle de mathématiques</a> at INSA Lyon.
+    </p>
+    <p>
       I'm interested in developing new efficient numerical methods for interface problems, especially in electromagnetics and in plasmonics. I work on wave propagation phenomena and related problems, Finite Element-based methods to accurately capture near-fields in plasmonic structures, integral equation methods for close evaluation problems.
     </p>
 
