@@ -62,6 +62,20 @@
       {
         "authors": [
           "C. Carvalho",
+          "E. Cortes",
+		  "S. Papadimitropoulos",
+          "C. Tsogka"
+        ],
+        "links": {
+          "preprint": "https://arxiv.org/abs/2605.21830"
+        },
+        "title": "Solving forward and inverse wave scattering via boundary integral equations and deep learning. Applications to cloaking design",
+		"volume": "(submitted)",
+        "year": 2026
+      },
+      {
+        "authors": [
+          "C. Carvalho",
           "S. Chaillat",
           "E. Cortes",
           "C. Tsogka"
