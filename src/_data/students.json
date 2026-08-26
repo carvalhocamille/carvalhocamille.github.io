@@ -2,12 +2,12 @@
   "current_phd": [
     {
       "coadvised_with": {
-        "name": "Chrysoula Tsogka",
-        "url": "https://sites.ucmerced.edu/ctsogka"
+        "name": "Elie Bretin",
+        "url": "https://math.univ-lyon1.fr/~ebretin/"
       },
-      "name": "Elsie Cortes",
-      "photo": "ecortes2.jpg",
-      "status": "PhD Candidate (exp. grad. June 2026)"
+      "name": "Baptiste Claustre",
+      "photo": "Bclautre.jpeg",
+      "status": "PhD student (2026-2029)"
     }
   ],
   "graduate_students": [
@@ -55,6 +55,15 @@
       "name": "Amine Smidi",
       "photo": "photos/asmidi.jpg",
       "status": "Graduate Student (11/23-8/24)"
+    },
+    {
+      "coadvised_with": {
+        "name": "Chrysoula Tsogka",
+        "url": "https://sites.ucmerced.edu/ctsogka"
+      },
+      "name": "Elsie Cortes",
+      "photo": "ecortes2.jpg",
+      "status": "PhD 2026"
     }
   ],
   "postdocs": [
